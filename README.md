@@ -1,2 +1,2 @@
 # emfinfo.github.io
-A generic repository for software of the school EMF, section info.
+A generic repository for Java .jar libraries of EMF school.
