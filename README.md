@@ -1,5 +1,5 @@
 # emfinfo.github.io
-A generic repository for Java .jar libraries of the EMF school. To use this library in a Maven project, you can add some  lines in your pom.xml. Example :
+A generic repository for Java .jar libraries of the EMF school. To link a Maven project with a library here, you must add some lines in your pom.xml (build file). Example :
 
     <!-- additional repository -->  
     <repositories>
