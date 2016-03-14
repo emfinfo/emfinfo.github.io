@@ -28,8 +28,8 @@ A generic repository for Java .jar libraries of the EMF school. To link a Maven 
       </dependency>    
     </dependencies>
     
-Scala SBT for BasicLib :<br>
-    libraryDependencies += "ch.jcsinfo" % "basiclib" % "1.01"
+    Scala SBT for BasicLib :<br>
+      libraryDependencies += "ch.jcsinfo" % "basiclib" % "1.01"
 
-Scala SBT for DaoLayer :<br>
-    libraryDependencies += "ch.emfinfo" % "daolayer" % "5.34"
+    Scala SBT for DaoLayer :<br>
+      libraryDependencies += "ch.emfinfo" % "daolayer" % "5.34"
