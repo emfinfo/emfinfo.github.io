@@ -29,6 +29,7 @@ A generic repository for Java .jar libraries of the EMF school. To link a Maven 
     </dependencies>
     
 For Scala SBT, addd a resolver and dependencies :<br>
+
     resolvers += Resolver.url("Emf-info Repository", 
       url("http://emfinfo.github.io/javalib/releases"))(Resolver.ivyStylePatterns)
     
