@@ -28,12 +28,12 @@ A generic repository for Java .jar libraries of the EMF school. To link a Maven 
       </dependency>    
     </dependencies>
     
-    For Scala SBT, addd a resolver and dependencies :
-      resolvers += Resolver.url("Emf-info Repository", 
-        url("http://emfinfo.github.io/javalib/releases"))(Resolver.ivyStylePatterns)
+For Scala SBT, addd a resolver and dependencies :
+    resolvers += Resolver.url("Emf-info Repository", 
+      url("http://emfinfo.github.io/javalib/releases"))(Resolver.ivyStylePatterns)
     
-      libraryDependencies ++Seq= (
-        "ch.jcsinfo" % "basiclib" % "1.01",
-        "ch.emfinfo" % "daolayer" % "5.34",
-        ...
-      )    
+    libraryDependencies ++Seq= (
+      "ch.jcsinfo" % "basiclib" % "1.01",
+      "ch.emfinfo" % "daolayer" % "5.34",
+      ...
+    )    
