@@ -8,26 +8,25 @@ A generic repository for Java .jar libraries of the EMF school. To link a Maven 
         <name>emfinfo.github.io</name>
         <url>http://emfinfo.github.io/javalibs/releases</url>
       </repository>
+      
     </repositories>      
     
-    <!-- dependencies for BasicLib -->
     <dependencies>
+      <!-- dependencies for BasicLib -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>basiclib</artifactId>
         <version>1.01</version>
-      </dependency>    
-    </dependencies>
-
-    <!-- dependencies for DaoLayer -->
-    <dependencies>
+      </dependency> 
+      
+      <!-- dependencies for DaoLayer -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>daolayer</artifactId>
         <version>5.34</version>
       </dependency>    
     </dependencies>
-    
+
 For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
 
     resolvers += "EMF-info Repository" at "http://emfinfo.github.io/javalibs/releases"
