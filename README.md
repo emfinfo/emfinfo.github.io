@@ -11,20 +11,23 @@ A generic repository for Java .jar libraries of the EMF school. To link a Maven 
       
     </repositories>      
     
+    <!-- dependencies -->
     <dependencies>
-      <!-- dependencies for BasicLib -->
+      
+      <!-- on BasicLib -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>basiclib</artifactId>
         <version>1.01</version>
       </dependency> 
       
-      <!-- dependencies for DaoLayer -->
+      <!-- on DaoLayer -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>daolayer</artifactId>
         <version>5.34</version>
-      </dependency>    
+      </dependency>
+      
     </dependencies>
 
 For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
