@@ -30,7 +30,7 @@ A generic repository for Java .jar libraries of the EMF school. To link a Maven 
     
 For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
 
-   resolvers += "EMF-info Repository" at "http://emfinfo.github.io/javalibs/releases"
+    resolvers += "EMF-info Repository" at "http://emfinfo.github.io/javalibs/releases"
     
     libraryDependencies ++Seq= (
       "ch.emf.info" % "basiclib" % "1.01",
