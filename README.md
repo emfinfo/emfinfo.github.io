@@ -1,8 +1,8 @@
 # emfinfo.github.io
 A generic repository for Java .jar libraries of the EMF school. Here is some documentation :
 
-    http://jcstritt.emf-informatique.ch/docs/basiclib
-    http://jcstritt.emf-informatique.ch/docs/daolayer
+http://jcstritt.emf-informatique.ch/docs/basiclib
+http://jcstritt.emf-informatique.ch/docs/daolayer
 
 To link a Maven project with a library here, you must add some lines in your pom.xml (build file). Example :
 
