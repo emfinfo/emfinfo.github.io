@@ -8,7 +8,6 @@ A generic repository for Java .jar libraries of the EMF school. To link a Maven 
         <name>emfinfo.github.io</name>
         <url>http://emfinfo.github.io/javalibs/releases</url>
       </repository>
-      
     </repositories>      
     
     <!-- dependencies -->
