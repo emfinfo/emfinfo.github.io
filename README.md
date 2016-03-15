@@ -13,7 +13,7 @@ A generic repository for Java .jar libraries of the EMF school. To link a Maven 
     <!-- dependencies for BasicLib -->
     <dependencies>
       <dependency>       
-        <groupId>ch.jcsinfo</groupId>
+        <groupId>ch.emf.info</groupId>
         <artifactId>basiclib</artifactId>
         <version>1.01</version>
       </dependency>    
@@ -22,7 +22,7 @@ A generic repository for Java .jar libraries of the EMF school. To link a Maven 
     <!-- dependencies for DaoLayer -->
     <dependencies>
       <dependency>       
-        <groupId>ch.emfinfo</groupId>
+        <groupId>ch.emf.info</groupId>
         <artifactId>daolayer</artifactId>
         <version>5.34</version>
       </dependency>    
