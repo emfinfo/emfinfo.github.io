@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="ch.emf.logus" module="cinnamonamf_2.11" revision="1.1" status="integration" publication="20160207163752">
+	<info organisation="ch.emf.info" module="cinnamonamf_2.11" revision="1.1" status="integration" publication="20160322154448">
 		<description>
 		CinnamonAMF
 		</description>
