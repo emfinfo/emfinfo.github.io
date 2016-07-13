@@ -2,7 +2,7 @@
 A generic repository for Java .jar libraries of the EMF school. 
 This includes Play2 modules too like "CinnamonAmf".
 
-Here is some documentation for the two used libraries :
+Here is some documentation for the two used libraries :<br>
 http://jcstritt.emf-informatique.ch/doc/basiclib<br>
 http://jcstritt.emf-informatique.ch/doc/daolayer
 
