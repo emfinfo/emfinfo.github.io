@@ -1,6 +1,8 @@
 # emfinfo.github.io
-A generic repository for Java .jar libraries of the EMF school. Here is some documentation :
+A generic repository for Java .jar libraries of the EMF school. 
+This includes Play2 modules too like "CinnamonAmf".
 
+Here is some documentation for the two used libraries :
 http://jcstritt.emf-informatique.ch/doc/basiclib<br>
 http://jcstritt.emf-informatique.ch/doc/daolayer
 
