@@ -24,14 +24,14 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>basiclib</artifactId>
-        <version>1.01</version>
+        <version>1.02</version>
       </dependency> 
       
       <!-- on DaoLayer -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>daolayer</artifactId>
-        <version>5.35</version>
+        <version>5.36</version>
       </dependency>
       
     </dependencies>
