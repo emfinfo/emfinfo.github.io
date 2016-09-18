@@ -42,6 +42,6 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     
     libraryDependencies ++Seq= (
       "ch.emf.info" % "basiclib" % "1.02",
-      "ch.emf.info" % "daolayer" % "5.36",
+      "ch.emf.info" % "daolayer" % "5.37",
       ...
     )    
