@@ -24,7 +24,7 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>basiclib</artifactId>
-        <version>1.0.4</version>
+        <version>1.0.5</version>
       </dependency> 
       
       <!-- on DaoLayer -->
@@ -41,7 +41,7 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     resolvers += "EMF-info Repository" at "http://emfinfo.github.io/javalibs/releases"
     
     libraryDependencies ++Seq= (
-      "ch.emf.info" % "basiclib" % "1.0.4",
+      "ch.emf.info" % "basiclib" % "1.0.5",
       "ch.emf.info" % "daolayer" % "5.1.0",
       ...
     )    
