@@ -24,7 +24,7 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>basiclib</artifactId>
-        <version>1.0.5</version>
+        <version>1.0.6</version>
       </dependency> 
       
       <!-- on DaoLayer -->
