@@ -31,7 +31,7 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>daolayer</artifactId>
-        <version>5.1.1</version>
+        <version>5.1.2</version>
       </dependency>
       
     </dependencies>
@@ -42,6 +42,6 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     
     libraryDependencies ++Seq= (
       "ch.emf.info" % "basiclib" % "1.0.7",
-      "ch.emf.info" % "daolayer" % "5.1.1",
+      "ch.emf.info" % "daolayer" % "5.1.2",
       ...
     )    
