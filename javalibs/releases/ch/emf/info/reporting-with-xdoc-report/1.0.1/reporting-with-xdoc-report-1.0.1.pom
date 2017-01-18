@@ -25,38 +25,44 @@
 
   <dependencies>
 
-    <!-- dependencies for compilation & run time-->
+    <!-- emfinfo libraries -->
     <dependency>
       <groupId>ch.emf.info</groupId>
       <artifactId>basiclib</artifactId>
       <version>1.0.8</version>
     </dependency>
 
+    <!-- XDocreport -->
+    <!-- https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.xdocreport.document -->
     <dependency> <!-- include core, converter, template, log4j -->
       <groupId>fr.opensagres.xdocreport</groupId>
       <artifactId>fr.opensagres.xdocreport.document</artifactId>
-      <version>1.0.5</version>
+      <version>1.0.6</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.xdocreport.document.docx -->
     <dependency> <!-- for docx in-out -->
       <groupId>fr.opensagres.xdocreport</groupId>
       <artifactId>fr.opensagres.xdocreport.document.docx</artifactId>
-      <version>1.0.5</version>
+      <version>1.0.6</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.xdocreport.template.freemarker -->
     <dependency> <!-- use freemarker template marker -->
       <groupId>fr.opensagres.xdocreport</groupId>
       <artifactId>fr.opensagres.xdocreport.template.freemarker</artifactId>
-      <version>1.0.5</version>
+      <version>1.0.6</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/fr.opensagres.xdocreport/org.apache.poi.xwpf.converter.pdf -->
     <dependency> <!--  for pdf convertion -->
       <groupId>fr.opensagres.xdocreport</groupId>
       <artifactId>org.apache.poi.xwpf.converter.pdf</artifactId>
-      <version>1.0.5</version>
+      <version>1.0.6</version>
     </dependency>
 
-    <!-- dependencies for tests run -->
+
+    <!-- dependencies for tests -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
