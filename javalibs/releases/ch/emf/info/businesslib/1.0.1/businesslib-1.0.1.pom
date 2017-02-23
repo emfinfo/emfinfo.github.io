@@ -4,7 +4,7 @@
 
   <!-- the basics -->
   <groupId>ch.emf.info</groupId>
-  <artifactId>bvrlib</artifactId>
+  <artifactId>businesslib</artifactId>
   <version>1.0.1</version>
   <packaging>jar</packaging>
   <properties>
@@ -23,7 +23,8 @@
     <dependency>
       <groupId>ch.emf.info</groupId>
       <artifactId>basiclib</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.9</version>
+      <scope>test</scope>
     </dependency>
 
     <dependency>
@@ -99,7 +100,7 @@
   </reporting>
 
   <!-- more project information -->
-  <name>BvrLib</name>
+  <name>BusinessLib</name>
   <description>Library helper to manage BVR</description>
   <licenses>
     <license>
