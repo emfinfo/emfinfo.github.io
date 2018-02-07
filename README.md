@@ -1,8 +1,7 @@
 # emfinfo.github.io
 A generic repository for Java .jar libraries of the EMF school. 
-This includes Play2 modules too, like "CinnamonAmf" (deprecated module).
 
-Here is some documentation for the two knowned libraries :<br>
+Here is some documentation for the two JCS/EMF libraries :<br>
 http://jcstritt.emf-informatique.ch/doc/basiclib<br>
 http://jcstritt.emf-informatique.ch/doc/daolayer
 
@@ -24,8 +23,15 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>basiclib</artifactId>
-        <version>1.1.0</version>
-      </dependency> 
+        <version>1.2.0</version>
+      </dependency>
+      
+      <!-- on CypherLib  -->
+      <dependency>       
+        <groupId>ch.emf.info</groupId>
+        <artifactId>cypherlib</artifactId>
+        <version>1.0.1</version>
+      </dependency>       
       
       <!-- on DaoLayer -->
       <dependency>       
@@ -41,7 +47,8 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     resolvers += "EMF-info Repository" at "http://emfinfo.github.io/javalibs/releases"
     
     libraryDependencies ++Seq= (
-      "ch.emf.info" % "basiclib" % "1.1.0",
+      "ch.emf.info" % "basiclib" % "1.2.0",
+      "ch.emf.info" % "cypherlib" % "1.0.1",
       "ch.emf.info" % "daolayer" % "5.1.5",
       ...
     )    
