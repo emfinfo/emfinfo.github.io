@@ -3,8 +3,8 @@ A generic repository for Java .jar libraries of the EMF school.
 
 Here is some documentation for the JCS/EMF libraries :<br>
 http://jcstritt.emf-informatique.ch/doc/basiclib<br>
-http://jcstritt.emf-informatique.ch/doc/cypherlib<br>
 http://jcstritt.emf-informatique.ch/doc/daolayer<br>
+http://jcstritt.emf-informatique.ch/doc/cypherlib<br>
 http://jcstritt.emf-informatique.ch/doc/javafxlib
 
 To link a Maven project with a library here, you must add some lines in your pom.xml (build file). Example :
@@ -28,19 +28,19 @@ To link a Maven project with a library here, you must add some lines in your pom
         <version>1.2.2</version>
       </dependency>
       
+      <!-- on DaoLayer -->
+      <dependency>       
+        <groupId>ch.emf.info</groupId>
+        <artifactId>daolayer</artifactId>
+        <version>5.2.0</version>
+      </dependency>
+      
       <!-- on CypherLib  -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>cypherlib</artifactId>
         <version>1.0.1</version>
       </dependency>       
-      
-      <!-- on DaoLayer -->
-      <dependency>       
-        <groupId>ch.emf.info</groupId>
-        <artifactId>daolayer</artifactId>
-        <version>5.1.5</version>
-      </dependency>
       
       <!-- on JavaFxLib -->
       <dependency>       
@@ -57,8 +57,8 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     
     libraryDependencies ++Seq= (
       "ch.emf.info" % "basiclib" % "1.2.2",
+      "ch.emf.info" % "daolayer" % "5.2.0",
       "ch.emf.info" % "cypherlib" % "1.0.1",
-      "ch.emf.info" % "daolayer" % "5.1.5",
       "ch.emf.info" % "javafxlib" % "1.0.1",
       ...
     )    
