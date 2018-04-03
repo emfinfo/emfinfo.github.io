@@ -28,7 +28,7 @@
     <dependency>
       <groupId>ch.emf.info</groupId>
       <artifactId>basiclib</artifactId>
-      <version>1.1.1</version>
+      <version>1.2.2</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/net.java.dev.glazedlists/glazedlists_java15 -->
