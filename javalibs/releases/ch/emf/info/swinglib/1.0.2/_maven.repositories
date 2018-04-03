@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Aug 29 17:43:21 CEST 2017
+swinglib-1.0.2.jar>=
+swinglib-1.0.2-sources.jar>=
+swinglib-1.0.2.pom>=
+swinglib-1.0.2-javadoc.jar>=
