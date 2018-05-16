@@ -56,7 +56,7 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     resolvers += "EMF-info Repository" at "http://emfinfo.github.io/javalibs/releases"
     
     libraryDependencies ++Seq= (
-      "ch.emf.info" % "basiclib" % "1.2.3",
+      "ch.emf.info" % "basiclib" % "1.2.3", 
       "ch.emf.info" % "daolayer" % "5.2.0",
       "ch.emf.info" % "cypherlib" % "1.0.1",
       "ch.emf.info" % "javafxlib" % "1.0.1",
