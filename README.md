@@ -11,7 +11,7 @@ To link a Maven project with a library here, you must add some lines in your pom
 
     <!-- additional repository -->  
     <repositories>
-      <repository>        
+      <repository>
         <id>emfinfo</id>
         <name>emfinfo.github.io</name>
         <url>http://emfinfo.github.io/javalibs/releases</url>
@@ -25,7 +25,7 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>basiclib</artifactId>
-        <version>1.2.3</version>
+        <version>1.3.1</version>
       </dependency>
       
       <!-- on DaoLayer -->
@@ -39,7 +39,7 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>cypherlib</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
       </dependency>       
       
       <!-- on JavaFxLib -->
@@ -56,9 +56,9 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     resolvers += "EMF-info Repository" at "http://emfinfo.github.io/javalibs/releases"
     
     libraryDependencies ++Seq= (
-      "ch.emf.info" % "basiclib" % "1.2.3", 
+      "ch.emf.info" % "basiclib" % "1.3.1", 
       "ch.emf.info" % "daolayer" % "5.2.0",
-      "ch.emf.info" % "cypherlib" % "1.0.1",
+      "ch.emf.info" % "cypherlib" % "1.0.2",
       "ch.emf.info" % "javafxlib" % "1.0.1",
       ...
     )    
