@@ -18,6 +18,15 @@
     <!--<play2.version>2.6.20</play2.version>-->
     <scala.version>2.12.4</scala.version>
   </properties>
+  
+  <!-- additional repository -->
+  <repositories>
+    <repository>
+      <id>emfinfo</id>
+      <name>emfinfo.github.io</name>
+      <url>http://emfinfo.github.io/javalibs/releases</url>
+    </repository>
+  </repositories>  
 
   <!-- dependencies -->
   <dependencies>
@@ -139,7 +148,7 @@
     </license>
   </licenses>
 
-  <url>https://github.com/emfinfo/basiclib</url>
+  <url>https://github.com/emfinfo/playdao</url>
   <developers>
     <developer>
       <id>STT</id>
