@@ -4,6 +4,7 @@ A generic repository for Java .jar libraries of the EMF school.
 Here is some documentation for the JCS/EMF libraries :<br>
 http://jcstritt.emf-informatique.ch/doc/basiclib<br>
 http://jcstritt.emf-informatique.ch/doc/daolayer<br>
+http://jcstritt.emf-informatique.ch/doc/playdao<br>
 http://jcstritt.emf-informatique.ch/doc/cypherlib<br>
 http://jcstritt.emf-informatique.ch/doc/javafxlib
 
@@ -35,6 +36,13 @@ To link a Maven project with a library here, you must add some lines in your pom
         <version>6.0.1</version>
       </dependency>
       
+      <!-- on PlayDao -->
+      <dependency>       
+        <groupId>ch.emf.info</groupId>
+        <artifactId>playdao</artifactId>
+        <version>1.0.1</version>
+      </dependency>      
+      
       <!-- on CypherLib  -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
@@ -58,6 +66,7 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     libraryDependencies ++Seq= (
       "ch.emf.info" % "basiclib" % "1.3.3", 
       "ch.emf.info" % "daolayer" % "6.0.1",
+      "ch.emf.info" % "playdao" % "1.0.1",
       "ch.emf.info" % "cypherlib" % "1.0.2",
       "ch.emf.info" % "javafxlib" % "1.0.1",
       ...
