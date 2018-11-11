@@ -36,10 +36,10 @@ To link a Maven project with a library here, you must add some lines in your pom
         <version>6.0.1</version>
       </dependency>
       
-      <!-- on PlayDao -->
+      <!-- on DaoPlay -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
-        <artifactId>playdao</artifactId>
+        <artifactId>daoplay</artifactId>
         <version>1.0.1</version>
       </dependency>      
       
@@ -66,7 +66,7 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     libraryDependencies ++Seq= (
       "ch.emf.info" % "basiclib" % "1.3.3", 
       "ch.emf.info" % "daolayer" % "6.0.1",
-      "ch.emf.info" % "playdao" % "1.0.1",
+      "ch.emf.info" % "daoplay" % "1.0.1",
       "ch.emf.info" % "cypherlib" % "1.0.2",
       "ch.emf.info" % "javafxlib" % "1.0.1",
       ...
