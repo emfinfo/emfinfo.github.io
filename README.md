@@ -4,7 +4,7 @@ A generic repository for Java .jar libraries of the EMF school.
 Here is some documentation for the JCS/EMF libraries :<br>
 http://jcstritt.emf-informatique.ch/doc/basiclib<br>
 http://jcstritt.emf-informatique.ch/doc/daolayer<br>
-http://jcstritt.emf-informatique.ch/doc/playdao<br>
+http://jcstritt.emf-informatique.ch/doc/daoplay<br>
 http://jcstritt.emf-informatique.ch/doc/cypherlib<br>
 http://jcstritt.emf-informatique.ch/doc/javafxlib
 
