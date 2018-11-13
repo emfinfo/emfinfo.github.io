@@ -4,11 +4,11 @@
 
   <!-- the basics -->
   <groupId>ch.emf.info</groupId>
-  <artifactId>playutils</artifactId>
+  <artifactId>playlib</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
-  <name>PlayUtils</name>
+  <name>PlayLib</name>
   <description>A small library with static methods for the Play framework.</description>
   <url>https://github.com/emfinfo/playdao</url>
   <licenses>
