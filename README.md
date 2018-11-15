@@ -47,7 +47,7 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>playlib</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
       </dependency>  
             
       <!-- on CypherLib  -->
@@ -74,7 +74,7 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
       "ch.emf.info" % "basiclib" % "1.3.3", 
       "ch.emf.info" % "daolayer" % "6.0.1",
       "ch.emf.info" % "daoplay" % "1.0.1",
-      "ch.emf.info" % "playlib" % "1.0.0",
+      "ch.emf.info" % "playlib" % "1.0.1",
       "ch.emf.info" % "cypherlib" % "1.0.2",
       "ch.emf.info" % "javafxlib" % "1.0.1",
       ...
