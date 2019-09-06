@@ -1,7 +1,7 @@
 # emfinfo.github.io
-A generic repository for Java .jar libraries of the EMF school. 
+A generic repository for Java .jar libraries. 
 
-Here is some documentation for the JCS/EMF libraries :<br>
+Here is some documentation for the libraries :<br>
 http://jcstritt.emf-informatique.ch/doc/basiclib<br>
 http://jcstritt.emf-informatique.ch/doc/cypherlib<br>
 http://jcstritt.emf-informatique.ch/doc/daolayer<br>
