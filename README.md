@@ -2,11 +2,11 @@
 A generic repository for Java .jar libraries. 
 
 Here is some documentation for the libraries :<br>
-http://jcstritt.emf-informatique.ch/doc/basiclib<br>
-http://jcstritt.emf-informatique.ch/doc/cypherlib<br>
-http://jcstritt.emf-informatique.ch/doc/daolayer<br>
-http://jcstritt.emf-informatique.ch/doc/playlib<br>
-http://jcstritt.emf-informatique.ch/doc/javafxlib
+http://homepage.hispeed.ch/~jcsinfo/doc/basiclib<br>
+http://homepage.hispeed.ch/~jcsinfo/doc/cypherlib<br>
+http://homepage.hispeed.ch/~jcsinfo/doc/daolayer<br>
+http://homepage.hispeed.ch/~jcsinfo/doc/playlib<br>
+http://homepage.hispeed.ch/~jcsinfo/doc/javafxlib
 
 To link a Maven project with a library here, you must add some lines in your pom.xml (build file). Example :
 
@@ -40,7 +40,7 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>daolayer</artifactId>
-        <version>6.1.0</version>
+        <version>6.1.1</version>
       </dependency>   
       
       <!-- on PlayLib -->
@@ -66,7 +66,7 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     libraryDependencies ++Seq= (
       "ch.emf.info" % "basiclib" % "1.3.4", 
       "ch.emf.info" % "cypherlib" % "1.1.0",
-      "ch.emf.info" % "daolayer" % "6.1.0",
+      "ch.emf.info" % "daolayer" % "6.1.1",
       "ch.emf.info" % "playlib" % "1.1.0",
       "ch.emf.info" % "javafxlib" % "1.0.1",
       ...
