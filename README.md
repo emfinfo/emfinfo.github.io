@@ -2,11 +2,11 @@
 A generic repository for Java .jar libraries. 
 
 Here is some documentation for the libraries :<br>
-http://homepage.hispeed.ch/~jcsinfo/doc/basiclib<br>
-http://homepage.hispeed.ch/~jcsinfo/doc/cypherlib<br>
-http://homepage.hispeed.ch/~jcsinfo/doc/daolayer<br>
-http://homepage.hispeed.ch/~jcsinfo/doc/playlib<br>
-http://homepage.hispeed.ch/~jcsinfo/doc/javafxlib
+http://www.jcsinfo.ch/doc/basiclib<br>
+http://www.jcsinfo.ch/doc/cypherlib<br>
+http://www.jcsinfo.ch/doc/daolayer<br>
+http://www.jcsinfo.ch/doc/playlib<br>
+http://www.jcsinfo.ch/doc/javafxlib
 
 To link a Maven project with a library here, you must add some lines in your pom.xml (build file). Example :
 
