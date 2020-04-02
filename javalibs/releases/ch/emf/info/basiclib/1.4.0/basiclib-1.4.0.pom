@@ -15,7 +15,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
-
+  
   <!-- dependencies -->
   <dependencies>
 
@@ -33,16 +33,16 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
-
+    
   </dependencies>
 
   <!-- build settings -->
   <build>
     <plugins>
-
+      
       <plugin>
         <artifactId>maven-source-plugin</artifactId>
-        <version>3.2.1</version> <!-- ok 24.10.2018 -->
+        <version>3.2.1</version>
       </plugin>
 
       <plugin>
@@ -52,7 +52,7 @@
 
       <plugin>
         <artifactId>maven-deploy-plugin</artifactId>
-        <version>3.0.0-M1</version> <!-- ok 24.10.2018 -->
+        <version>3.0.0-M1</version>
       </plugin>
 
       <plugin>
@@ -92,7 +92,7 @@
           <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
         </configuration>
       </plugin>
-
+      
     </plugins>
   </build>
 
@@ -102,6 +102,9 @@
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.1.1</version>
+        <configuration>
+          <source>1.8</source>
+        </configuration>             
       </plugin>
     </plugins>
   </reporting>
@@ -123,16 +126,16 @@
       <id>STT</id>
       <name>Jean-Claude Stritt</name>
       <email>jcsinfo@hispeed.ch</email>
-      <url>http://www.jcsinfo.ch/</url>
+      <url>https://www.jcsinfo.ch/</url>
       <organization>JCSINFO</organization>
-      <organizationUrl>http://www.jcsinfo.ch</organizationUrl>
+      <organizationUrl>https://www.jcsinfo.ch</organizationUrl>
       <roles>
         <role>engineer</role>
         <role>developer</role>
       </roles>
       <timezone>Europe/Switzerland</timezone>
       <properties>
-        <picUrl>http://www.jcsinfo.ch/pic/jcs01-square.jpg</picUrl>
+        <picUrl>https://www.jcsinfo.ch/pic/jcs01-square.jpg</picUrl>
       </properties>
     </developer>
   </developers>
