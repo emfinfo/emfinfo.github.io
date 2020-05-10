@@ -2,11 +2,11 @@
 A generic repository for Java .jar libraries. 
 
 Here is some documentation for the libraries :<br>
-http://www.jcsinfo.ch/doc/basiclib<br>
-http://www.jcsinfo.ch/doc/cypherlib<br>
-http://www.jcsinfo.ch/doc/daolayer<br>
-http://www.jcsinfo.ch/doc/playlib<br>
-http://www.jcsinfo.ch/doc/javafxlib
+https://www.jcsinfo.ch/doc/basiclib<br>
+https://www.jcsinfo.ch/doc/cypherlib<br>
+https://www.jcsinfo.ch/doc/daolayer<br>
+https://www.jcsinfo.ch/doc/playlib<br>
+https://www.jcsinfo.ch/doc/javafxlib
 
 To link a Maven project with a library here, you must add some lines in your pom.xml (build file). Example :
 
@@ -24,39 +24,39 @@ To link a Maven project with a library here, you must add some lines in your pom
       
       <!-- on BasicLib -->
       <dependency>       
-        <groupId>ch.emf.info</groupId>
+        <groupId>ch.jdsinfo.libs</groupId>
         <artifactId>basiclib</artifactId>
-        <version>1.4.0</version>
+        <version>1.5.0</version>
       </dependency>
       
       <!-- on CypherLib  -->
       <dependency>       
-        <groupId>ch.emf.info</groupId>
+        <groupId>ch.jcsinfo.libs</groupId>
         <artifactId>cypherlib</artifactId>
-        <version>1.1.0</version>
+        <version>1.2.1</version>
       </dependency>       
       
+      <!-- on PlayLib -->
+      <dependency>       
+        <groupId>ch.jcsinfo.libs</groupId>
+        <artifactId>playlib</artifactId>
+        <version>2.8.1</version>
+      </dependency>  
+            
+      <!-- on JavaFxLib -->
+      <dependency>       
+        <groupId>ch.jcsinfo.libs</groupId>
+        <artifactId>javafxlib</artifactId>
+        <version>8.0.1</version>
+      </dependency>      
+
       <!-- on DaoLayer -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>daolayer</artifactId>
         <version>6.1.1</version>
       </dependency>   
-      
-      <!-- on PlayLib -->
-      <dependency>       
-        <groupId>ch.emf.info</groupId>
-        <artifactId>playlib</artifactId>
-        <version>2.8.0</version>
-      </dependency>  
             
-      <!-- on JavaFxLib -->
-      <dependency>       
-        <groupId>ch.emf.info</groupId>
-        <artifactId>javafxlib</artifactId>
-        <version>8.0.1</version>
-      </dependency>      
-      
     </dependencies>
 
 For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
@@ -64,10 +64,10 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     resolvers += "EMF-info Repository" at "http://emfinfo.github.io/javalibs/releases"
     
     libraryDependencies ++Seq= (
-      "ch.emf.info" % "basiclib" % "1.4.0", 
-      "ch.emf.info" % "cypherlib" % "1.1.0",
-      "ch.emf.info" % "daolayer" % "6.1.1",
-      "ch.emf.info" % "playlib" % "2.8.0",
-      "ch.emf.info" % "javafxlib" % "8.0.1",
+      "ch.jcsinfo.libs" % "basiclib" % "1.5.0", 
+      "ch.jcsinfo.libs" % "cypherlib" % "1.2.1",
+      "ch.jcsinfo.libs" % "playlib" % "2.8.1",
+      "ch.jcsinfo.libs" % "javafxlib" % "8.0.1",
+      "ch.emf.info" % "daolayer" % "6.1.1"
       ...
     )    
