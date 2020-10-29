@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- the basics -->
+  <groupId>ch.jcsinfo.libs</groupId>
+  <artifactId>businesslib</artifactId>
+  <version>1.0.6</version>
+  <packaging>jar</packaging>
+  
+   <!-- maven project properties -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <!-- additional repository -->
+  <repositories>
+    <repository>
+      <id>emfinfo</id>
+      <name>emfinfo.github.io</name>
+      <url>http://emfinfo.github.io/javalibs/releases</url>
+    </repository>
+  </repositories>
+
+  <!-- dependencies -->
+  <dependencies>
+
+    <!-- dependencies for compilation -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.12</version> <!-- may 2020 -->
+    </dependency>
+
+    <dependency>
+      <groupId>ch.jcsinfo.libs</groupId>
+      <artifactId>basiclib</artifactId>
+      <version>1.5.2</version>
+    </dependency>
+
+    <!-- dependencies for tests -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.1</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <profiles>
+    <profile>
+      <id>disable-java8-doclint</id>
+      <activation>
+        <jdk>[1.8,)</jdk>
+      </activation>
+      <properties>
+        <additionalparam>-Xdoclint:none</additionalparam>
+      </properties>
+    </profile>
+  </profiles>
+
+  <!-- build settings -->
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.0.0</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.3</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.8.2</version>
+      </plugin>
+
+      <plugin>
+        <groupId>net.ju-n.maven.plugins</groupId>
+        <artifactId>checksum-maven-plugin</artifactId>
+        <version>1.3</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>files</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <fileSets>
+            <fileSet>
+              <directory>target</directory>
+              <includes>
+                <include>*.pom</include>
+                <include>*.jar</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+  <!-- javadoc settings -->
+  <reporting>
+    <plugins>
+
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.9</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.3</version>
+      </plugin>
+
+    </plugins>
+  </reporting>
+
+  <!-- more project information -->
+  <name>BusinessLib</name>
+  <description>Library helper to manage BVR</description>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <!--  <url>https://github.com/emfinfo/reportingwithxdocreport</url>-->
+  <developers>
+    <developer>
+      <id>STT</id>
+      <name>Jean-Claude Stritt</name>
+      <email>jcsinfo@hispeed.ch</email>
+      <url>https://www.jcsinfo.ch/</url>
+      <organization>JCSINFO</organization>
+      <organizationUrl>https://www.jcsinfo.ch</organizationUrl>
+      <roles>
+        <role>engineer</role>
+        <role>developer</role>
+      </roles>
+      <timezone>Europe/Switzerland</timezone>
+      <properties>
+        <picUrl>https://www.jcsinfo.ch/pic/jcs01-square.jpg</picUrl>
+      </properties>
+    </developer>
+  </developers>
+
+
+</project>
