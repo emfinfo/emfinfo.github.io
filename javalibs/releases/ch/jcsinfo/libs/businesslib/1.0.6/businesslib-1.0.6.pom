@@ -2,7 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <!-- the basics -->
+  <!-- project information -->
+  <name>BusinessLib</name>
+  <description>Library to help business operations</description>
+
+  <!-- project organization -->
+  <organization>
+    <name>JCSINFO</name>
+    <url>https://www.jcsinfo.ch</url>
+  </organization>
+  
+  <!-- project build information -->
   <groupId>ch.jcsinfo.libs</groupId>
   <artifactId>businesslib</artifactId>
   <version>1.0.6</version>
@@ -28,13 +38,6 @@
   <!-- dependencies -->
   <dependencies>
 
-    <!-- dependencies for compilation -->
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.18.12</version>
-    </dependency>
-
     <dependency>
       <groupId>ch.jcsinfo.libs</groupId>
       <artifactId>basiclib</artifactId>
@@ -42,12 +45,17 @@
     </dependency>
     
     <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.12</version>
+    </dependency>
+
+    <dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
       <version>2.3.1</version>
     </dependency>    
 
-    <!-- dependencies for tests -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -57,7 +65,7 @@
 
   </dependencies>
 
-  <!-- build settings -->
+  <!-- build plugins -->
   <build>
     <plugins>
       <plugin>
@@ -67,7 +75,7 @@
 
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.1.1</version>
+        <version>3.2.0</version>
       </plugin>
 
       <plugin>
@@ -100,14 +108,6 @@
       </plugin>
       
       <plugin>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.1.0</version>
-        <configuration>
-          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-        </configuration>        
-      </plugin> 
-
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.9.1</version>
@@ -116,9 +116,10 @@
     </plugins>
   </build>
   
-  <!-- "mvn site" report -->
+  <!-- HTML reporting with "mvn site" -->
   <reporting>
     <plugins>
+      
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
         <configuration>
@@ -126,12 +127,20 @@
           <excludePackageNames>ch.jcsinfo.camt054.beans</excludePackageNames>          
         </configuration>      
       </plugin> 
+      
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+          <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+        </configuration>        
+      </plugin> 
+            
     </plugins>
   </reporting>  
 
   <!-- project information details -->
-  <name>BusinessLib</name>
-  <description>Library to help business operations</description>
   <licenses>
     <license>
       <name>MIT License</name>
@@ -140,13 +149,12 @@
     </license>
   </licenses>
 
-  <url>https://github.com/emfinfo/basiclib</url>
+  <!-- developers -->
   <developers>
     <developer>
       <id>STT</id>
       <name>Jean-Claude Stritt</name>
       <email>jcsinfo@hispeed.ch</email>
-      <url>https://www.jcsinfo.ch/</url>
       <organization>JCSINFO</organization>
       <organizationUrl>https://www.jcsinfo.ch</organizationUrl>
       <roles>
@@ -159,6 +167,5 @@
       </properties>
     </developer>
   </developers>
-
 
 </project>
