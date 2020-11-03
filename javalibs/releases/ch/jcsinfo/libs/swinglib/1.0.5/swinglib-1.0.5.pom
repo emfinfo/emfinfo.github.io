@@ -19,7 +19,7 @@
   <version>1.0.5</version>
   <packaging>jar</packaging>
 
-  <!-- application, project and maven properties -->
+  <!-- maven properties -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -165,6 +165,7 @@
     </license>
   </licenses>
 
+  <!-- developers -->
   <developers>
     <developer>
       <id>STT</id>
