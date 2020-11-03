@@ -39,7 +39,6 @@
   <!-- dependencies -->
   <dependencies>
 
-    <!-- emfinfo libraries -->
     <dependency>
       <groupId>ch.jcsinfo.libs</groupId>
       <artifactId>basiclib</artifactId>
