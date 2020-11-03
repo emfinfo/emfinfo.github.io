@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- project information -->
+  <name>ReportingWithXDocReport</name>
+  <description>Reporting Library for docx templates.</description>
+  <url></url>
+
+
+  <!-- project organization -->
+  <organization>
+    <name>JCSINFO</name>
+    <url>https://www.jcsinfo.ch</url>
+  </organization>  
+
+  <!-- project build information -->
+  <groupId>ch.jcsinfo.libs</groupId>
+  <artifactId>reporting-with-xdoc-report</artifactId>
+  <version>1.0.3</version>
+  <packaging>jar</packaging>
+  
+  <!-- properties -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <!-- additional repository -->
+  <repositories>
+    <repository>
+      <id>emfinfo</id>
+      <name>emfinfo.github.io</name>
+      <url>http://emfinfo.github.io/javalibs/releases</url>
+    </repository>
+  </repositories>
+
+   <!-- dependencies -->
+  <dependencies>
+
+    <dependency>
+      <groupId>ch.jcsinfo.libs</groupId>
+      <artifactId>basiclib</artifactId>
+      <version>1.5.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.xdocreport.document -->
+    <dependency> <!-- include core, converter, template, log4j -->
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.document</artifactId>
+      <version>2.0.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.xdocreport.document.docx -->
+    <dependency> <!-- for docx in-out -->
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.document.docx</artifactId>
+      <version>2.0.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.xdocreport.template.freemarker -->
+    <dependency> <!-- use freemarker template marker -->
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>fr.opensagres.xdocreport.template.freemarker</artifactId>
+      <version>2.0.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/fr.opensagres.xdocreport/org.apache.poi.xwpf.converter.pdf -->
+    <dependency> <!--  for pdf convertion -->
+      <groupId>fr.opensagres.xdocreport</groupId>
+      <artifactId>org.apache.poi.xwpf.converter.pdf</artifactId>
+      <version>1.0.6</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>2.3.30</version> <!-- march 2020 -->
+    </dependency>
+    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.1</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <!-- build plugins -->
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.2.1</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.0.0-M1</version>
+      </plugin>
+
+      <plugin>
+        <groupId>net.ju-n.maven.plugins</groupId>
+        <artifactId>checksum-maven-plugin</artifactId>
+        <version>1.4</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>files</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <fileSets>
+            <fileSet>
+              <directory>target</directory>
+              <includes>
+                <include>*.pom</include>
+                <include>*.jar</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.9.1</version>
+      </plugin> 
+            
+    </plugins>
+  </build>
+
+  <!-- HTML reporting with "mvn site" -->
+  <reporting>
+    <plugins>
+      
+     <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+        </configuration>             
+      </plugin>         
+
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+       <version>3.1.0</version>
+        <configuration>
+          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+          <dependencyDetailsEnabled>true</dependencyDetailsEnabled>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </reporting>
+
+  <!-- licenses -->
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <!-- developers -->
+  <developers>
+    <developer>
+      <id>STT</id>
+      <name>Jean-Claude Stritt</name>
+      <email>jcsinfo@hispeed.ch</email>
+      <organization>JCSINFO</organization>
+      <organizationUrl>https://www.jcsinfo.ch</organizationUrl>
+      <roles>
+        <role>engineer</role>
+        <role>developer</role>
+      </roles>
+      <timezone>Europe/Switzerland</timezone>
+      <properties>
+        <picUrl>https://www.jcsinfo.ch/pic/jcs01-square.jpg</picUrl>
+      </properties>
+    </developer>
+  </developers>
+
+</project>
