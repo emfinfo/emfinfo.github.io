@@ -26,35 +26,35 @@ To link a Maven project with a library here, you must add some lines in your pom
       <dependency>       
         <groupId>ch.jcsinfo.libs</groupId>
         <artifactId>basiclib</artifactId>
-        <version>1.5.1</version>
+        <version>1.5.3</version>
       </dependency>
       
       <!-- on CypherLib  -->
       <dependency>       
         <groupId>ch.jcsinfo.libs</groupId>
         <artifactId>cypherlib</artifactId>
-        <version>1.2.1</version>
+        <version>1.2.2</version>
       </dependency>       
       
       <!-- on PlayLib -->
       <dependency>       
         <groupId>ch.jcsinfo.libs</groupId>
         <artifactId>playlib</artifactId>
-        <version>2.8.2</version>
+        <version>2.8.11</version>
       </dependency>  
             
       <!-- on JavaFxLib -->
       <dependency>       
         <groupId>ch.jcsinfo.libs</groupId>
         <artifactId>javafxlib</artifactId>
-        <version>8.0.1</version>
+        <version>8.0.3</version>
       </dependency>      
 
       <!-- on DaoLayer -->
       <dependency>       
         <groupId>ch.emf.info</groupId>
         <artifactId>daolayer</artifactId>
-        <version>6.1.2</version>
+        <version>6.1.5</version>
       </dependency>   
             
     </dependencies>
@@ -64,10 +64,10 @@ For Scala SBT (Play! framework), add a resolver and necessary dependencies :<br>
     resolvers += "EMF-info Repository" at "http://emfinfo.github.io/javalibs/releases"
     
     libraryDependencies ++Seq= (
-      "ch.jcsinfo.libs" % "basiclib" % "1.5.1", 
-      "ch.jcsinfo.libs" % "cypherlib" % "1.2.1",
-      "ch.jcsinfo.libs" % "playlib" % "2.8.2",
-      "ch.jcsinfo.libs" % "javafxlib" % "8.0.1",
-      "ch.emf.info" % "daolayer" % "6.1.2"
+      "ch.jcsinfo.libs" % "basiclib" % "1.5.3", 
+      "ch.jcsinfo.libs" % "cypherlib" % "1.2.2",
+      "ch.jcsinfo.libs" % "playlib" % "2.8.11",
+      "ch.jcsinfo.libs" % "javafxlib" % "8.0.3",
+      "ch.emf.info" % "daolayer" % "6.1.5"
       ...
     )    
